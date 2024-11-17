@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+h1{
+    margin-bottom: 20px;
+}
+.contenedorUnico{
+    margin-top: 50px;
+    padding: 15px 20px;
+    width: 50%;
+}
+.asked article{
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+.contenedorFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 15px;
+    color: blue;
+    cursor: pointer;
+}
+.contenedorFlex .caja{
+    margin-right: 4px;
+}
+.caja{
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asked article p{
+    display: none;
+    padding: 10px 15px;
+    padding-left: 30px;
+}
+.asked h2{
+    font-weight: normal;
+}
+.contenedorUnico .skills{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.contenedorAvance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.branding .contenedorAvance .hr1{
+    width: 90%;
+    height: 2px;
+    border: none;
+    background-color: blue;
+}
+.branding .contenedorAvance .hr2{
+    width: 10%;
+    height: 2px;
+    border: none;
+    background-color: gray;
+}
+.web .contenedorAvance .hr1{
+    width: 65%;
+    height: 2px;
+    border: none;
+    background-color: yellow;
+}
+.web .contenedorAvance .hr2{
+    width: 35%;
+    height: 2px;
+    border: none;
+    background-color: gray;
+}
+.copy .contenedorAvance .hr1{
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: red;
+}
+.copy .contenedorAvance .hr2{
+    width: 0%;
+    height: 2px;
+    border: none;
+    background-color: gray;
+}
+.video .contenedorAvance .hr1{
+    width: 75%;
+    height: 2px;
+    border: none;
+    background-color: green;
+}
+.video .contenedorAvance .hr2{
+    width: 25%;
+    height: 2px;
+    border: none;
+    background-color: gray;
+}
+.skillsSeccion article{
+    margin-bottom: 30px;
+}

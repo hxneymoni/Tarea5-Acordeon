@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONICA MARTINEZ 9SC</title>
+    <link rel='stylesheet' href='estilos.css'>
+    <link rel='stylesheet' href='movil.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/d188054eba.js' crossorigin='anonymous'></script>
+</head>
+<body class="ancho">
+    <div class="contenedorUnico">
+        <h1>Frequently Asked Questions</h1>
+        <section class="asked">
+            <article>
+                <div class="contenedorFlex">
+                    <div class="caja"><i class="fa-solid fa-plus"></i></div>
+                    <h2>Do you provide any scripts with your templates</h2>
+                </div>
+                <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.</p>
+            </article>
+            <article>
+                <div class="contenedorFlex">
+                    <div class="caja"><i class="fa-solid fa-plus"></i></div>
+                    <h2>What do I receive when I order a template?</h2>
+                </div>
+                <p>After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.</p>
+            </article>
+            <article>
+                <div class="contenedorFlex">
+                    <div class="caja"><i class="fa-solid fa-plus"></i></div>
+                    <h2>In what formats are your templates available?</h2>
+                </div>
+                <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</p>
+            </article>
+            <article>
+                <div class="contenedorFlex">
+                    <div class="caja"><i class="fa-solid fa-plus"></i></div>
+                    <h2>What am I allowed to do with the templates?</h2>
+                </div>
+                <p>You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals.</p>
+            </article>
+        </section>
+    </div>
+    <div class="contenedorUnico">
+        <h2 class="skills">Skills</h2>
+        <section class="skillsSeccion">
+            <article class="branding">
+                <div class="contenedorAvance">
+                    <p>Branding</p>
+                    <p>90%</p>
+                </div>
+                <div class="contenedorAvance">
+                    <hr class="hr1">
+                    <hr class="hr2">
+                </div>
+            </article>
+            <article class="web">
+                <div class="contenedorAvance">
+                    <p>Web Design</p>
+                    <p>65%</p>
+                </div>
+                <div class="contenedorAvance">
+                    <hr class="hr1">
+                    <hr class="hr2">
+                </div>
+            </article>
+            <article class="copy">
+                <div class="contenedorAvance">
+                    <p>Copywriting</p>
+                    <p>100%</p>
+                </div>
+                <div class="contenedorAvance">
+                    <hr class="hr1">
+                    <hr class="hr2">
+                </div>
+            </article>
+            <article class="video">
+                <div class="contenedorAvance">
+                    <p>Video Production</p>
+                    <p>75%</p>
+                </div>
+                <div class="contenedorAvance">
+                    <hr class="hr1">
+                    <hr class="hr2">
+                </div>
+            </article>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function() {
+            //Muestra la primera p
+            $('.asked article:first-child p').show();
+            $('.asked article:first-child .caja i').removeClass('fa-plus').addClass('fa-minus');
+
+            $('.contenedorFlex').on('click', function() {
+                const $answer = $(this).next('p');
+                // Ocultar todos los párrafos menos el seleccionado
+                $('.asked article p').not($answer).slideUp();
+                // Alternar el contenido del párrafo seleccionado
+                $answer.slideToggle();
+                // Cambiar el icono a + o - según el estado
+                $(this).find('.caja i').toggleClass('fa-plus fa-minus');
+                $('.contenedorFlex').not(this).find('.caja i').removeClass('fa-minus').addClass('fa-plus');
+            });
+        });
+    </script>
+</body>
+</html>
